@@ -1,0 +1,80 @@
+:root {
+  --color-background: #000a10;
+  --color-font-white: #ccffff;
+  --color-update: #0066ffb0;
+  --color-delete: #ff0000b0;
+  --color-update-hover: #0066ff;
+  --color-delete-hover: #ff0000da;
+}
+
+.user-edit-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  color: var(--color-font-white);
+  border: 1px solid var(--color-font-white);
+  padding: 1pc;
+  border-radius: 1pc;
+  text-align: center;
+  width: 500px;
+  margin-top: 1pc;
+}
+
+.btn-container > .image-container {
+  background-color: var(--color-background);
+  border-radius: 50%;
+  padding: 0;
+}
+
+.user-edit-container > form {
+  margin-top: 1.5pc;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5pc;
+  font-weight: 700;
+}
+
+.user-edit-container > form > .btn-container {
+  margin-top: 0.5pc;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 5px;
+}
+
+.user-edit-container > form > input,
+select {
+  background: transparent;
+  border: 1px solid var(--color-font-white);
+  outline: none;
+  color: var(--color-font-white);
+  border-radius: 1pc;
+  padding: 5px 1pc 5px 1pc;
+}
+
+.user-edit-container > form > .btn-container > input {
+  font-weight: bold;
+  width: 30%;
+  border: none;
+  outline: none;
+  padding: 0.5pc;
+  border-radius: 10px;
+  color: var(--color-font-white);
+}
+
+.user-edit-container > form > .btn-container > input:first-child {
+  background-color: var(--color-delete);
+}
+
+.user-edit-container > form > .btn-container > input:first-child:hover {
+  background-color: var(--color-delete-hover);
+}
+
+.user-edit-container > form > .btn-container > input:last-child {
+  background-color: var(--color-update);
+}
+
+.user-edit-container > form > .btn-container > input:last-child:hover {
+  background-color: var(--color-update-hover);
+}

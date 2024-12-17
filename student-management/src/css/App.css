@@ -1,0 +1,82 @@
+:root {
+  --color-background: #000a10;
+  --color-font-white: #ccffff;
+  --color-update: #0066ffab;
+  --color-delete: #ff000080;
+  --color-update-hover: #0066ff;
+  --color-delete-hover: #ff0000da;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./assets/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.container {
+  color: var(--color-font-white);
+  padding: 1pc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container nav h1 {
+  margin: 1pc 0 2pc 0;
+}
+
+table {
+  width: 1000px;
+  padding: 1rem;
+  margin: 0;
+  color: var(--color-font-white);
+  font-weight: 700;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 10px;
+  border-right: 1px solid var(--color-font-white);
+  border-bottom: 1px solid var(--color-font-white);
+  padding: 5px;
+  overflow: hidden; /* Changed to hidden to prevent unnecessary scrollbars */
+  text-overflow: ellipsis;
+}
+
+tr,
+thead {
+  width: 100%;
+}
+
+td > button {
+  margin: 0;
+  width: 100%; /* Adjusted to rem for responsiveness */
+  height: 3rem; /* Adjusted to rem */
+  border: none;
+  outline: none;
+  font-weight: bold;
+  color: var(--color-font-white);
+}
+
+input {
+  padding-right: 10px;
+}
+
+option {
+  background-color: var(--color-update);
+  color: var(--color-font-white);
+}

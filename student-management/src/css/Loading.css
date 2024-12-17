@@ -1,0 +1,5 @@
+.loading-container,
+.error-container {
+  position: fixed;
+  top: 16pc;
+}

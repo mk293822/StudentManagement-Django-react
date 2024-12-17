@@ -1,0 +1,175 @@
+:root {
+  --color-background: #000a10;
+  --color-font-white: #ccffff;
+  --color-update: #0066ff80;
+  --color-delete: #ff000080;
+  --color-update-hover: #0066ff;
+  --color-delete-hover: #ff0000da;
+}
+
+.main-top-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  height: 28pc;
+  width: 100%;
+  padding: 1pc;
+  position: sticky;
+  display: flex;
+}
+
+.top-container {
+  height: 100%;
+  gap: 1rem;
+  width: 90%;
+  margin-left: 1rem;
+  padding-top: 0;
+}
+
+.top-container .sub-con {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  height: 50%;
+}
+
+.sub-con .sick-leave-container {
+  width: 100%;
+}
+
+.sick-leave-container {
+  text-align: center;
+  width: 30%;
+  min-height: 100%;
+  border: 1px solid var(--color-font-white);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  position: sticky;
+}
+
+/* botton container */
+
+.school-calendar ol {
+  margin-top: 0.5rem;
+  max-height: 130px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  list-style-position: inside;
+  text-align: left;
+}
+
+.school-calendar .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+}
+
+.school-calendar .top button {
+  position: relative;
+  left: 5rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  color: var(--color-font-white);
+  background-color: var(--color-update);
+}
+
+.school-calendar .top button:hover {
+  background-color: var(--color-update-hover);
+}
+
+.bottom-container {
+  border: 1px solid var(--color-font-white);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  height: 47%;
+  text-align: center;
+  display: flex;
+}
+
+.bottom-container .left, .bottom-container .right {
+  text-align: center;
+  margin-left: 1rem;
+  width: 50%;
+}
+
+
+
+.bottom-container ul, .bottom-container .right ol {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 17px;
+  margin-top: 0.5rem;
+  align-items: self-start;
+}
+
+.bottom-container .left ul li {
+  flex: 1;
+  text-align: center;
+}
+
+.bottom-container .right ol {
+  list-style-position: inside;
+}
+
+
+.bottom-container .hr {
+  background-color: #ccffff;
+  width: 1px;
+  height: 100%;
+}
+
+
+.bottom-container .right .sub {
+  display: flex;
+  max-height: 140px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+
+.bottom-container .right .sub .name, .bottom-container .right .sub .duty {
+  margin-top: .5rem;
+  width: 50%;
+}
+
+.bottom-container .right .sub .duty ul {
+  list-style-type: circle;
+}
+
+.bottom-container .right .sub .name ol {
+  font-size: 16px;
+  line-height: 1.25rem;
+}
+
+
+
+/* Event */
+.school-calendar .event_flex {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1rem;
+  margin-bottom: 5px;
+}
+
+.school-calendar .event_flex button {
+  color: var(--color-font-white);
+  background-color: var(--color-delete);
+  border: none;
+  outline: none;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  font-weight: bold;
+}
+
+.school-calendar .event_flex button:hover {
+  background-color: var(--color-delete-hover);
+}

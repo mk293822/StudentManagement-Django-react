@@ -1,0 +1,28 @@
+.attendance-tracking {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.absent-container,
+.late-container {
+  margin-top: 1rem;
+  height: 100%;
+  width: 10rem;
+}
+
+.attendance-tracking ol {
+  max-height: 109px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  list-style-position: inside;
+  text-align: left;
+}
+
+.attendance-tracking .hr {
+  background-color: #ffffff;
+  width: 1px;
+  margin-top: 10px;
+  height: 130px;
+}

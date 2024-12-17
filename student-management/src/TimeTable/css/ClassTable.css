@@ -1,0 +1,229 @@
+:root {
+  --color-background: #000a10;
+  --color-font-white: #ccffff;
+  --color-update: #0066ff80;
+  --color-delete: #ff000080;
+  --color-update-hover: #0066ff;
+  --color-delete-hover: #ff0000da;
+}
+
+main {
+  width: 1240px;
+  height: 100%;
+  align-items: center;
+  margin: auto;
+}
+
+.class-table-main table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+th,
+td {
+  border: 1px solid var(--color-font-white);
+  padding: 10px;
+  text-align: center;
+}
+
+/* Class Table Sections */
+.class-table-container {
+  text-align: center;
+  width: 100%;
+}
+
+.class-table-container table thead {
+  display: block;
+  width: 100%;
+}
+
+.class-table-container table tbody {
+  max-height: 400px;
+  overflow-y: auto;
+  display: block;
+}
+
+.class-table-container table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.class-table-container td {
+  padding: 0;
+}
+
+.class-table-container table td:nth-child(3),
+.class-table-container table th:nth-child(3) {
+  min-width: 500px;
+}
+
+.class-table-container table td:nth-child(1),
+.class-table-container table td:nth-child(2),
+.class-table-container table th:nth-child(1),
+.class-table-container table th:nth-child(2) {
+  min-width: 150px;
+}
+
+.class-table-container table thead th {
+  z-index: 10;
+}
+
+.class-table-container table td:nth-last-child(3),
+.class-table-container table td:nth-last-child(2),
+.class-table-container table td:last-child {
+  width: 10rem;
+}
+
+.class-table-container table th:last-child {
+  width: 30rem;
+  padding: 0;
+}
+
+.class-table-container table th:last-child button {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: var(--color-update);
+  color: var(--color-font-white);
+  outline: none;
+  border: none;
+}
+
+.class-table-container table th:last-child button:hover {
+  background-color: var(--color-update-hover);
+}
+
+.class-table-container table td:nth-last-child(3)>button,
+.class-table-container table td:nth-last-child(2)>button {
+  background-color: var(--color-update);
+}
+
+.class-table-container table td:nth-last-child(3)>button:hover,
+.class-table-container table td:nth-last-child(2)>button:hover {
+  background-color: var(--color-update-hover);
+}
+
+.class-table-container table td:last-child>button {
+  background-color: var(--color-delete);
+}
+
+.class-table-container table td:last-child>button:hover {
+  background-color: var(--color-delete-hover);
+}
+
+/* Time Table Sections */
+
+.time-table-container {
+  width: 100%;
+  text-align: center;
+}
+
+.time-table-container>table>thead tr:first-child {
+  height: 3rem;
+}
+
+.time-table-container>table>thead tr td:first-child {
+  border: none;
+  padding: 0 0 1rem 0;
+}
+
+.time-table-container>table th:first-child {
+  width: 5rem;
+}
+
+.time-table-container table tbody tr td:last-child {
+  padding: 0;
+}
+
+.time-table-container table tbody tr td:last-child button {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-update);
+}
+
+.time-table-container table tbody tr td:last-child button:hover {
+  background-color: var(--color-update-hover);
+}
+
+.time-table-container>table>tbody tr {
+  height: 3rem;
+  padding: 0;
+}
+
+.time-table-container>table>tbody tr td:first-child {
+  width: 5rem;
+}
+
+.time-table-container>table>tbody tr td {
+  padding: 0;
+  margin: 0;
+  width: 9.2rem;
+}
+
+.time-table-container>table>tbody tr input {
+  width: 100%;
+  background: transparent;
+  height: 3rem;
+  margin: 0;
+  outline: none;
+  border: none;
+  color: var(--color-font-white);
+  padding: 0 10px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  overflow: auto;
+}
+
+/* Student list section */
+
+.studentList-table-container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  height: 28pc;
+  border-radius: 1pc;
+  padding: 1pc;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1pc 0pc 1pc;
+}
+
+.studentList-table-container table {
+  background: transparent;
+}
+
+.studentList-table-container td:nth-last-child(3),
+.studentList-table-container td:nth-last-child(2),
+.studentList-table-container td:last-child {
+  padding: 0;
+  width: 7rem;
+}
+
+.studentList-table-container td:last-child>button, .studentList-table-container td:nth-last-child(3)>button {
+  background-color: var(--color-update);
+}
+
+.studentList-table-container td:last-child>button:hover, .studentList-table-container td:nth-last-child(3)>button:hover {
+  background-color: var(--color-update-hover);
+}
+
+.studentList-table-container td:nth-last-child(2)>button {
+  background: var(--color-delete);
+}
+
+.studentList-table-container td:nth-last-child(2)>button:hover {
+  background-color: var(--color-delete-hover);
+}
+
+/* Class Add Section */
+
+.class-add-container {
+  width: 40%;
+  margin: auto;
+}

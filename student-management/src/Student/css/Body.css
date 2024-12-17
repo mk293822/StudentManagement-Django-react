@@ -1,0 +1,117 @@
+:root {
+  --color-background: #000a10;
+  --color-font-white: #ccffff;
+  --color-update: #0066ff80;
+  --color-delete: #ff000080;
+  --color-update-hover: #0066ff;
+  --color-delete-hover: #ff0000da;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: auto;
+  width: 100%;
+  padding: 5px;
+  margin: auto;
+  padding: 0;
+}
+
+/* Table Section */
+/* Base Table Styles */
+.table-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  width: 1040px;
+  height: 28pc;
+  border-radius: 1pc;
+  padding: 1pc;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1pc 0pc 1pc;
+}
+
+.table-container.no-data {
+  text-align: center;
+  padding-top: 9pc;
+  display: block;
+}
+
+.table-container.no-data > button {
+  margin-top: 1rem;
+  background-color: var(--color-update);
+  border: none;
+  outline: none;
+  border-radius: 1pc;
+  padding: 1rem 2rem;
+  color: var(--color-font-white);
+}
+
+.table-container.no-data > button:hover {
+  background-color: var(--color-update-hover);
+}
+
+/* Last two columns with buttons */
+.table-container td:nth-last-child(2),
+.table-container td:last-child {
+  padding: 0;
+}
+
+.table-container td:last-child > button {
+  background-color: var(--color-update);
+}
+
+.table-container td:last-child > button:hover {
+  background-color: var(--color-update-hover);
+}
+
+.table-container td:nth-last-child(2) > button {
+  background: var(--color-delete);
+}
+
+.table-container td:nth-last-child(2) > button:hover {
+  background-color: var(--color-delete-hover);
+}
+
+.table-container thead tr th:last-child {
+  padding: 0;
+}
+
+.table-container thead tr th:last-child button {
+  background-color: var(--color-update);
+  outline: none;
+  border: none;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--color-font-white);
+}
+
+.table-container thead tr th:last-child button:hover {
+  background-color: var(--color-update-hover);
+}
+
+/* Media Queries */
+
+/* Large Desktop (1200px and up) */
+/* @media (min-width: 1200px) {
+   
+} */
+
+/* Laptop/Medium Screens (992px to 1199px) */
+/* @media (max-width: 1199px) and (min-width: 992px) {
+  
+} */
+
+/* Tablet Screens (768px to 991px) */
+/* @media (max-width: 991px) and (min-width: 768px) {
+    
+} */
+
+/* Mobile Screens (767px and down) */
+/* @media (max-width: 767px) {
+ 
+} */

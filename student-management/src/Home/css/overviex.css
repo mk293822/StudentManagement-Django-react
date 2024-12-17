@@ -1,0 +1,42 @@
+.overview {
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+}
+
+.metrics {
+  margin: 0;
+  padding: 0;
+}
+
+.overview .metrics .metric {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.metric span {
+  width: 100%;
+  text-align: right;
+}
+
+.overview h2 {
+  margin-bottom: 0.5rem;
+}
+
+.overview hr {
+  margin: 2rem;
+}
+
+.overview .teacher-performance ol {
+  max-height: 100px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  list-style-position: inside;
+  text-align: left;
+}
+
+ol::-webkit-scrollbar {
+  display: none;
+}
