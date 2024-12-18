@@ -19,7 +19,7 @@ function AddEvent() {
   return (
     <section>
       <div className="user-edit-container">
-        <h2>Teacher Add Form</h2>
+        <h2>Event Add Form</h2>
         <div className="image-container">
           <img src="" alt="" />
         </div>

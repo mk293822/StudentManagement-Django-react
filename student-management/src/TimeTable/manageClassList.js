@@ -43,12 +43,11 @@ function ClassListBackend() {
                 if (title === 'Class-Table') {
                     const filteredData = searchItemCheck();
                     setGetClassApiData(filteredData);
+                    setIsLoading(false);
                 } else {
                     setGetClassApiData(response.data);
+                    setIsLoading(false);
                 }
-
-
-                setIsLoading(false);
             })
             .catch(error => {
                 setError({ error: true, data: error });

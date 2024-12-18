@@ -5,6 +5,8 @@ import TimeTable from "./TimeTable";
 import ClassList from "./ClassList";
 import StudentList from "./StudentList";
 import AddClass from "./AddClass";
+import Loading from "../Loading";
+import Error from "../Error";
 
 function ClassTable() {
   const {
@@ -13,7 +15,8 @@ function ClassTable() {
     isClassAdd,
     getClassApiData,
     setIsClassAdd,
-    setIsStudentList,
+    isLoading,
+    error,
   } = useContext(Context);
 
   function classAddHandler() {
@@ -21,7 +24,11 @@ function ClassTable() {
   }
 
   function Pages() {
-    if (timeTable.table) {
+    if (error.error) {
+      return <Error />;
+    } else if (isLoading) {
+      return <Loading />;
+    } else if (timeTable.table) {
       return <TimeTable />;
     } else if (isStudentList.student) {
       return <StudentList />;
