@@ -222,7 +222,6 @@ class GradeView(APIView):
 
 # Overview API View
 class OverviewView(APIView):
-    event_delete()
     def get(self, request):
         overview = Overview.objects.all()
         serializer = OverViewSerializer(overview, many=True)

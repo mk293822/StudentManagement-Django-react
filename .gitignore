@@ -1,4 +1,2 @@
-#virtual environment
-main
-
-# 
+backend/venv
+.env

@@ -23,9 +23,9 @@ function AddTeacher() {
     const inputs = e.target;
     const data = {
       name: inputs.name.value,
-      age: inputs.age.value,
+      age: Number(inputs.age.value),
       gender: inputs.gender.value === "Male" ? "M" : "F",
-      grade: inputs.grade.value,
+      grade: Number(inputs.grade.value),
       main_subject: inputs.main_subject.value,
       email: inputs.email.value,
     };
